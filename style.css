@@ -1,0 +1,375 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+:root {
+    --strong-Cyan: hsl(171, 66%, 44%);
+    --light-Blue: hsl(233, 100%, 69%);
+    --dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --grayish-Blue: hsl(201, 11%, 66%);
+}
+
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    text-align: center;
+}
+
+.flex, .bottom-list, .footer-links, .footer-content {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+.top-list {
+    text-align: left;
+}
+
+.div-container {
+    text-align: center;
+    padding: 0 40px;
+}
+
+h1, h2, h3 {
+    color: var(--dark-Grayish-Blue);
+}
+
+h2 {
+    margin-top: 100px;
+}
+
+p {
+    color: var(--grayish-Blue);
+    line-height: 1.8;
+}
+
+button {
+    padding: 10px 80px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.web-logo {
+    margin-top: 50px;
+}
+
+.download-ios {
+    background-color: var(--strong-Cyan);
+}
+
+.download-ios:active {
+    background-color: hsl(171, 65%, 38%);
+}
+
+.download-mac {
+    background-color: var(--light-Blue);
+}
+
+.download-mac:active {
+    background-color: hsl(233, 72%, 61%);
+}
+
+header p {
+    margin-bottom: 30px;
+    margin-left: 300px;
+}
+
+header .btns {
+    margin-left: 370px;
+    margin-bottom: 100px;
+}
+
+header {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    width: 1330px;
+}
+
+ 
+
+
+header p, 
+.top-main-div p, 
+.middle-2-main-div p,
+.bottom-main-div p {
+    width: 700px;
+    
+}
+
+.top-main-div p, 
+.middle-2-main-div p,
+.bottom-main-div p {
+    margin-left: 270px;
+    margin-bottom: 100px;
+    
+}
+
+.middle-3-main-div p {
+    margin-bottom: 100px;
+}
+
+.bottom-list {
+    gap: 80px;
+}
+
+.bottom-list li {
+    width: 300px;
+}
+
+.blacklist-li {
+    margin-left: 70px;
+}
+
+.collabs {
+    gap: 100px;
+    margin-left: 80px;
+}
+
+.bottom-main-div .btns {
+    margin-left: 330px;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: rgb(238, 238, 238);
+    width: 1330px;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grayish-Blue);
+    font-weight: 600;
+
+}
+
+a:hover {
+    color: var(--strong-Cyan);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 50px;
+    
+}
+
+.top-a, .bottom-a {
+    display: flex;
+    
+}
+
+.top-a {
+    gap: 200px;
+}
+
+.bottom-a {
+    gap: 151px;
+    margin-top: 20px;
+}
+
+.socials svg path:hover {
+    fill: var(--strong-Cyan);
+    cursor: pointer;
+}
+
+svg {
+    margin-left: 20px;
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center;
+    font-weight: 600;
+ }
+.attribution a { 
+    color: var(--strong-Cyan); 
+}
+
+@media  screen and (max-width: 768px) {
+    header, 
+    p, 
+    footer,
+    .top-main-div p, 
+    .middle-2-main-div p,
+    .bottom-main-div p {
+        width: 100vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .btns {
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .flex, .bottom-list {
+        flex-direction: column;
+    }
+
+    .collabs {
+        width: 200px;
+    }
+
+    .laptop-img, .devices-img {
+        width: 400px;
+        position: relative;
+        right: 160px;
+    }
+
+
+
+    header {
+        background-image: url(./images/bg-header-mobile.png);
+    }
+
+    .web-logo, 
+    header h1,
+    header p,
+    header .btns  {
+        position: relative;
+    }
+
+    .web-logo {
+        right: 200px;
+
+    }
+
+    header h1 {
+        width: 350px;
+    }
+
+    header p {
+        right: 300px;
+    }
+
+    header .btns {
+        right: 380px;
+    }
+
+    h2 {
+        position: relative;
+        right: 180px;
+    }
+
+    header p, 
+    .top-main-div p, 
+    .middle-2-main-div p,
+    .bottom-main-div p,
+    .middle-3-main-div p {
+     width: 350px;
+     
+     }
+
+     .top-main-div p, 
+     .middle-2-main-div p,
+     .bottom-main-div p,
+     .middle-3-main-div p {
+        position: relative;
+        right: 160px;
+     }
+ 
+
+    .middle-main-div ul li p{
+        width: 350px;
+    }
+
+    .middle-main-div ul{
+        text-align: center;
+    }
+
+
+
+    .middle-main-div ul li h3 {
+        position: relative;
+        right: 180px;
+    }
+
+    .middle-main-div ul li p {
+        position: relative;
+        right: 170px;
+    }
+
+    .blacklist-li {
+        margin: 0;
+    }
+
+    .bottom-list {
+        position: relative;
+        right: 30px;
+    }
+
+    .bottom-main-div .btns {
+        margin-left: 0;
+        position: relative;
+        right: 180px;
+
+    }
+
+    h3, .bottom-list img {
+        position: relative;
+        right: 130px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-link, .top-a, .bottom-a {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .collabs {
+        position: relative;
+        right: 160px;
+    }
+
+    svg {
+        margin-left: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 10px;
+        
+    }
+
+
+    footer {
+        width: 100vh;
+        position: relative;
+        right: 180px;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    
+  
+}
